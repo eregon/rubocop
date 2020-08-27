@@ -20,6 +20,7 @@ jobs:
         ruby: [ 2.4, 2.5, 2.6, 2.7, head ]
         include:
           - { os: windows, ruby: mingw }
+          - { os: ubuntu, ruby: truffleruby-head }
         exclude:
           - { os: windows, ruby: head  }
 
